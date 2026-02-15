@@ -75,11 +75,3 @@ bloom/
 └── preview.png
 ```
 
-## License
-
-Copyright (c) 2024 MDEV Software
-
-Permission is granted to use, publish, distribute, and share the Software free of charge. The Software is **not open source** — source code access, modification, merging, sublicensing, and selling are strictly prohibited.
-
-See the full license terms within the application.
-
