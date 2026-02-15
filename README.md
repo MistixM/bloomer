@@ -1,8 +1,85 @@
 # Bloomer
-This bot will catch all the falling blums in the Blum Telegram Web App (crypto game). Here I'm using pygetwindow and pyautogui to get whole window to scan and catch via mouse button, customtkinter for UI and more libraries for better user experience. 
 
-[![preview.png](https://i.postimg.cc/mrK6Twjp/preview.png)](https://postimg.cc/bGHRT1K1)
+![Cover](https://i.postimg.cc/3NpJgrRH/bloomer-cover.jpg)
 
+Automated clicker for farming resources in the Bloom Telegram mini-game. Detects flower elements on screen via pixel color recognition and clicks them automatically.
 
-# How to use
-Open Blum -> Open python file -> Set start key and accuracy that you like -> Click on the "Play" button minigame -> Click start key to start farm
+## Features
+
+- Automatic pixel detection and clicking for Bloom game flowers
+- Configurable hotkey (A-Z) to pause/resume the clicker
+- Three accuracy levels: **Easy**, **Medium**, **Extreme**
+- Modern dark-themed GUI built with CustomTkinter
+- Console version available as a lightweight alternative
+- Pre-built Windows executable (no Python required)
+
+## Requirements
+
+- Python 3.8+
+- Telegram Desktop with Bloom mini-game open
+- Windows OS
+
+## Installation
+
+```bash
+git clone https://github.com/your-username/bloomer.git
+cd bloomer/pc
+pip install pyautogui pygetwindow pynput keyboard customtkinter pillow pyfiglet
+```
+
+## Usage
+
+### GUI Version
+
+```bash
+python main.py
+```
+
+1. Open Bloom in Telegram Desktop
+2. Accept the license agreement on first launch
+3. Select your preferred hotkey and accuracy level
+4. Press the hotkey to start/pause the clicker
+
+### Console Version
+
+```bash
+python main_console.py
+```
+
+Press `S` to toggle the clicker on/off.
+
+### Pre-built Executable
+
+Download `Bloomer.exe` from the `pc/output/1.0.2/` directory and run it directly — no Python installation needed.
+
+## Accuracy Levels
+
+| Level    | Step Size | Description                  |
+|----------|-----------|------------------------------|
+| Easy     | 40px      | Fastest scanning, lower precision |
+| Medium   | 25px      | Balanced speed and accuracy  |
+| Extreme  | 23px      | Slowest scanning, highest precision |
+
+## Project Structure
+
+```
+bloom/
+├── pc/
+│   ├── main.py              # GUI version
+│   ├── main_console.py      # Console version
+│   ├── data.json             # User preferences
+│   ├── images/               # UI assets and icons
+│   └── output/               # Pre-built executables
+│       ├── 1.0.1/
+│       └── 1.0.2/
+└── preview.png
+```
+
+## License
+
+Copyright (c) 2024 MDEV Software
+
+Permission is granted to use, publish, distribute, and share the Software free of charge. The Software is **not open source** — source code access, modification, merging, sublicensing, and selling are strictly prohibited.
+
+See the full license terms within the application.
+
